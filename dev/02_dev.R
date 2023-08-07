@@ -64,12 +64,23 @@ covrpage::covrpage()
 usethis::use_github()
 
 # GitHub Actions
+usethis::use_github_actions()
+use_github_actions_badge(name = "R-CMD-check.yaml", repo_spec = NULL)
+use_github_action_check_standard(
+  save_as = "R-CMD-check.yaml",
+  ref = NULL,
+  ignore = TRUE,
+  open = FALSE
+)
+
+# GitHub Actions
 usethis::use_github_action()
 # Chose one of the three
 # See https://usethis.r-lib.org/reference/use_github_action.html
 usethis::use_github_action_check_release()
 usethis::use_github_action_check_standard()
 usethis::use_github_action_check_full()
+
 # Add action for PR
 usethis::use_github_action_pr_commands()
 
